@@ -1,10 +1,10 @@
 {
   "name": "stathat-wrapper",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A wrapper around stathat for handling multiple environments",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha"
   },
   "dependencies": {
     "stathat": "0.0.4"
