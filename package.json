@@ -1,0 +1,25 @@
+{
+  "name": "stathat-wrapper",
+  "version": "0.0.0",
+  "description": "A wrapper around stathat for handling multiple environments",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "dependencies": {
+    "stathat": "0.0.4"
+  },
+  "devDependencies": {
+    "should": "1.2.2",
+    "sinon": "1.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/axiomzen/stathat-wrapper.git"
+  },
+  "keywords": [
+    "stathat"
+  ],
+  "author": "AxiomZen",
+  "readmeFilename": "README.md"
+}
