@@ -29,12 +29,12 @@ module.exports = function(key, opts) {
   return {
     count: function(stat, count, cb) {
       if (reporting) {
-        stathat.trackEZCount(key, join(stat), count, cb);
+        stathat.trackEZCount(key, join(stat), count, (cb || function() {}));
       }
     },
     value: function(stat, value, cb) {
       if (reporting) {
-        stathat.trackEZValue(key, join(stat), value, cb);
+        stathat.trackEZValue(key, join(stat), value, (cb || function() {}));
       }
     }
   }
