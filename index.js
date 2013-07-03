@@ -12,7 +12,7 @@ module.exports = function(key, opts) {
   prefix = opts.prefix || prefix;
 
   var join = function(stat) {
-    [prefix, stat].join(separator);
+    return [prefix, stat].join(separator);
   };
 
   if (prefix) {

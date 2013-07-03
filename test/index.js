@@ -90,4 +90,23 @@ describe("Stathat Wrapper", function() {
       stathat.trackEZCount.calledWith("key", "prefixdevelopmentstatistics are fun", 1);
     });
   });
+  describe("use case", function() {
+    beforeEach(function() {
+      sh = stathatWrapper("key", {
+         prefix: require ('../package.json').name,
+         environment: 'development',
+         separator: " - ",
+         reporting: "development" !== "test"
+      });
+    });
+    it("should report a count", function() {
+      sh.count('test passes', 1);
+
+      stathat.trackEZCount.calledOnce.should.be.true;
+      var firstcall = stathat.trackEZCount.firstCall
+      firstcall.args[0].should.equal("key");
+      firstcall.args[1].should.equal("stathat-wrapper - development - test passes");
+      firstcall.args[2].should.equal(1);
+    });
+  });
 });
