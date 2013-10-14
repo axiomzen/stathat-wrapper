@@ -23,3 +23,6 @@ stathat.value('value', 22.75); // reports "application name - production - value
 ### Tests
 
 run the test suite with `npm test` or `mocha`
+
+***
+[![Powered by ZenHub.io](https://raw.github.com/axiomzen/zenhub-now/master/powered-by-zenhub-720.png)](https://zenhub.io)
